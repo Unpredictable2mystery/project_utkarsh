@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Utkarsh</title>
+    <style>
+        #formbox {
+            background-color: aqua;
+            position: relative;
+            top: -300px;
+            z-index: 2;
+            background-image: url("./image/letalk3.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #mainbox {
+            background-color: blue;
+            position: relative;
+            z-index: 1;
+            height: 500px;
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+            text-align: center;
+            color: rgb(15, 15, 15);
+            background-image: url("./image/mainbox4.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        
+        #infobox {
+            background-color: rgb(35, 207, 72);
+            height: 340px;
+            position: relative;
+            z-index: 2;
+            margin-top: -450px;
+            background-image: url("./image/wehere.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            display: flex;
+            margin: 40px;
+        }
+
+        .line {
+            flex-basis: 50%;
+            border: 2px dotted rgb(126, 122, 122);
+            padding: 10px;
+            box-sizing: border-box;
+            flex-basis: 50%;
+            border-radius: 42px ;
+        }
+
+        /* Add the following CSS rule for the images */
+        img {
+            filter: blur(5px); /* Adjust the blur amount as needed */
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <form action="https://formsubmit.co/suhaneekandalkar5527@gamil.com" method="POST">
+        <input type="hidden" name="_next" value="https:///Thanku.html">
+        <input type="hidden" name="_captcha" value="false">
+        <div id="mainbox">
+            <h1 style="color: aqua; font-size: 45px;" >More than just a project...</h1>
+        </div>
+        <div class="container">
+            <div id="infobox" class="line">
+                <h1>We're Here</h1>
+                <div>
+                    <h4>Location</h4>Hashu Advani Complex , Chembur Mumbai 400074
+                </div>
+                <div>
+                    <h4 style="color: rgb(202, 200, 199);">Email</h4> <p style="color: rgb(202, 200, 199);"> info.vesit@gmail.com</p>
+                </div>
+                <div>
+                    <h4 style="color: rgb(252, 248, 244);">Contact</h4> <p style="color: rgb(250, 245, 238);">022-98674563</p> 
+                </div>
+    
+            </div>
+            <div id="formbox" class="line">
+    
+                <h2 style="color: beige;">Let's Talk</h2>
+                <form action="send_email.php" method="post">
+                    <label for="name" style="color: bisque;">Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Your good name "><br><br>
+    
+                    <label for="email" style="color: bisque;">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Email pls  "><br><br>
+    
+                    <label for="message" style="color: bisque;">Message:</label>
+                    <textarea id="message" name="message" required placeholder="Eager to hear  "></textarea><br><br>
+    
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </form>
+    
+</body>
+
+</html>
